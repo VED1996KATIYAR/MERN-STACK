@@ -1,0 +1,8 @@
+1. Inline CSS
+Inline CSS allows you to apply styles directly within HTML tags using the style attribute. This method is useful for small-scale styling or when you need to apply a unique style to a single element.
+
+2. Internal CSS
+Internal CSS involves adding CSS styles directly within the HTML file by including them inside the <style> tags. This method is more efficient for applying styles to a single HTML document and keeps your CSS code more organized compared to inline styling.
+
+3. External CSS
+External CSS uses a separate .css file linked with the <link> tag, making it ideal for large projects by improving maintainability and reusability.

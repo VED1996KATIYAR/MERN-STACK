@@ -1,0 +1,8 @@
+Today I will learn selectors
+
+CSS Selectors are patterns used in CSS to select and target HTML elements so that styles can be applied to them. They define which elements on a web page should receive specific styling rules.
+
+Used to select HTML elements based on tag name, class, id,
+Help apply styles like color, font, spacing, and layout.
+Make web pages structured, consistent, and visually appealing.
+
