@@ -1,0 +1,27 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#a54949;
+    
+}
+.card{
+    width: 500px;
+    border:1px solid #555;
+    
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    
+}
+.card button{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border:1px solid black;
+    background:linear-gradient(to right,#ffb300,#43d843);
+}
