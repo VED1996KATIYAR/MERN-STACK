@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    padding:30px;
+    background-color:lightgray;
+    font-family:sans-serif
+}
+
+#container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px
+}
+
+#container>div{
+    background-color:lightblue;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid black;
+}
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: yellow;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 12px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
