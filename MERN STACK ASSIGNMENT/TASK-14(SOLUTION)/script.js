@@ -69,59 +69,96 @@
 // }
 
 
-let n1=153
-let n=n1;
-let sum=0;
-while(n>0){
-    let digit=n%10;
-    sum+=Math.pow(digit,3);
-    n=Math.floor(n/10);
+let n1 = 153;
+
+// 1. Sum of first n numbers
+let sumN = 0;
+
+for (let i = 1; i <= n1; i++) {
+    sumN += i;
 }
-console.log(`Number is: ${n1}`);
-console.log(`The sum of the digits of ${n1} is: ${sum}`);
-let n2=n1;
-let count=0;
-let arm=true;
-let temp=n2;
-while(temp>0){
+
+console.log(`Sum of first ${n1} numbers is: ${sumN}`);
+
+
+// 2. Multiplication table
+console.log(`Multiplication table of ${n1}:`);
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${n1} x ${i} = ${n1 * i}`);
+}
+
+
+// 3. Sum of digits
+let n = n1;
+let digitSum = 0;
+
+while (n > 0) {
+    let digit = n % 10;
+    digitSum += digit;
+    n = Math.floor(n / 10);
+}
+
+console.log(`The sum of the digits of ${n1} is: ${digitSum}`);
+
+
+// 4. Armstrong number
+let n2 = n1;
+let armstrongSum = 0;
+let count = 0;
+
+let temp = n2;
+
+// Count digits
+while (temp > 0) {
     count++;
-    temp=Math.floor(temp/10);
+    temp = Math.floor(temp / 10);
 }
-while(n2>0){
-    let digit=n2%10;
-    sum+=Math.pow(digit,count);
-    n2=Math.floor(n2/10);
+
+// Calculate Armstrong sum
+while (n2 > 0) {
+    let digit = n2 % 10;
+    armstrongSum += Math.pow(digit, count);
+    n2 = Math.floor(n2 / 10);
 }
-if(sum==n1){
+
+if (armstrongSum == n1) {
     console.log(`${n1} is an Armstrong number`);
-}
-else{
+} else {
     console.log(`${n1} is not an Armstrong number`);
 }
 
-let n3=n1;
-let isPrime=true;
-if(n3<=1){
-    isPrime=false;
-}else{
-    let counter=0;
-    for(let i=2;i<=n3;i++){
-        if(n3%i==0){
-            counter++;
+
+// 5. Prime number
+let n3 = n1;
+let isPrime = true;
+
+if (n3 <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i < n3; i++) {
+        if (n3 % i == 0) {
+            isPrime = false;
+            break;
         }
-    }
-    if(counter==1){
-        console.log(`${n3} is a prime number`);
-    }else{
-        console.log(`${n3} is not a prime number`);
     }
 }
 
-let n4=n1;
-let factors=[];
-for(let i=1;i<=n4;i++){
-    if(n4%i==0){
+if (isPrime) {
+    console.log(`${n3} is a prime number`);
+} else {
+    console.log(`${n3} is not a prime number`);
+}
+
+
+// 6. Factors
+let n4 = n1;
+let factors = [];
+
+for (let i = 1; i <= n4; i++) {
+    if (n4 % i == 0) {
         factors.push(i);
     }
 }
+
 console.log(`The factors of ${n4} are: ${factors}`);
