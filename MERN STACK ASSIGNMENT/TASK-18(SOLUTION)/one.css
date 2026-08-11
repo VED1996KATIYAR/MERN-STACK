@@ -1,0 +1,59 @@
+#one{
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.two{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    column-gap: 50px;
+    text-align: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+.two1{
+    width: 400px;
+    height: 95px;
+    /* background-color: aquamarine; */
+}
+.two2{
+    width: 90px;
+    height: 95px;
+    background-color: white;
+    border: 1px solid black;
+}
+.two3{
+    width: 90px;
+    height: 95px;
+    background-color: white;
+    border: 1px solid black;
+}
+.two4{
+    width: 90px;
+    height: 95px;
+    background-color: white;
+    border: 1px solid black;
+}
+.two5{
+    width: 90px;
+    height: 95px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.two2:hover{
+    background-color: red;
+}
+.two3:hover{
+    background-color: blue;
+}
+.two4:hover{
+    background-color: green;
+}
+.two5:hover{
+    background-color: yellow;
+}
