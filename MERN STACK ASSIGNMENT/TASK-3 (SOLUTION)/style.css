@@ -1,73 +1,47 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+article{
+    border: 2px solid black;
+    background-color: coral;
 }
-
-fieldset {
-    background-color: #f28b5a;
-    border: 4px solid black;
-    padding: 10px 20px 20px;
-}
-
-.head {
+.head{
     color: darkblue;
-    margin: 0 0 10px;
-    font-size: 30px;
 }
-
-#bglime {
-    background-color: lightgreen;
+span{
     color: red;
-    margin: 0 0 10px;
-    padding: 5px 0;
 }
-
-p {
+p{
     color: white;
+}
+#para{
+    color: green;
+}
+a{
     font-size: 20px;
-    margin: 8px 0;
-}
-
-#para {
-    color: green;
-}
-
-p span {
     color: black;
-    font-size: 30px;
 }
-
-h3 {
-    font-size: 25px;
-    margin: 18px 0 10px;
+p:last-of-type{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
 }
-
-ul,
-ol {
-    margin: 0 0 0 20px;
-    padding-left: 20px;
+ul{
+    color: white;
 }
-
-li {
-    margin: 6px 0;
-    font-size: 18px;
-}
-
-ul li span {
-    text-decoration: underline;
-    color: green;
+ul li:nth-child(1) u {
     background-color: yellow;
+    color: green;
 }
 
-ul li:nth-child(2) span {
-    color: blue;
-    background-color: violet;
-}
-
-ol li:nth-child(2) {
+ul li:nth-child(2) u {
+    background-color: darkviolet;
     color: blue;
 }
 
-ol li:nth-child(3) {
+ol{
+    color: black;
+}
+ol li:nth-child(2){
+    color: blue;
+}
+ol li:nth-child(3){
     color: red;
 }

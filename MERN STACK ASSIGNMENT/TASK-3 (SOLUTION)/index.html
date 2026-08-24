@@ -3,47 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
-
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
-
+<link rel="stylesheet" href="style.css"/>
 <body>
     <article>
-    <h1 class="head">
-        This is a h1 heading with head as a class.
-    </h1>
+        <h1 class="head">This is a h1 heading with head as a class.</h1>
+        <h2 class="head" id="bglime">This is a h2 heading with <span>"head"</span> as a class and "bglime" as an id</h2>
+        <h4 class="head">This is a h4 heading with head as a class. </h4>
+        <p>This is a p paragraph tag without any id or class styled using "p" element selector</p>
+        <p id="para">This is a p paragraph tag with para as an id.</p>
+        <p>This is a p <a>paragraph</a> tag without any id or class styled using "p" element selector</p>
 
-    <h2 class="head" id="bglime">
-        This is a h2 heading with "head" as a class and "bglime" as an id.
-    </h2>
+        <p>
+            Show this output without inline CSS nor using class or id for "p" tag.
+        </p>
 
-    <p>
-        This is a paragraph tag without any id or class styled using "p" element selector
-    </p>
-
-    <p id="pp" style="color: green;">
-        This is a p paragraph tag with para as an id
-    </p>
-
-    <p>This is a p <a style="font-size: 30px; color: black; font-weight: bolder;">paragraph</a> tag without any id or class styled using "p" element selector</p>
-
-    <p style="color: black; font-size: 20px; font-weight: bolder;">
-        Show this output with inline CSS nor using class or id for "p" tag.
-    </p>
-
-    <ul>
-        <li>Click <u style="background-color: yellow;">here</u> to go to UpSkillMafia</li>
-        <li>Click <u style="background-color: violet;">here</u> to go to Google</li>
-    </ul>
-
-    <ol>
-        <li>This is li tag without any id or class</li>
-        <li>This is li tag without any id or class and its text is in blue colour</li>
-        <li>This is li tag without any id or class and its text is in red colour</li>
-        <li>This is li tag without any id or class</li>
-        <li>This is li tag without any id or class</li>
-    </ol>
+        <ul>
+            <li>Click <u>here</u> to go to UpskillMafia.</li>
+            <li>Click <u>here</u> to go to Google</li>
+        </ul>
+        <ol>
+            <li>This is li tag without any id or class</li>
+            <li>This is li tag without any id or class and is in blue color</li>
+            <li>This is li tag without any id or class and is in red color</li>
+            <li>This is li tag without any id or class</li>
+            <li>This is li tag without any id or class</li>
+        </ol>
     </article>
 </body>
 </html>
