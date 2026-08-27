@@ -1,0 +1,33 @@
+.container{
+    width: 650px;
+    height: 650px;
+    background-color: aqua;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.static{
+    position: static;
+    background-color: black;
+    color: wheat;
+}
+.rel{
+    position: relative;
+    background-color: red;
+    /* top: 50px;
+    left: 100px; */
+}
+.abs{
+    background-color: blue;
+    position: absolute;
+
+}
+.fix{
+    background-color: brown;
+
+}
+.sti{
+    background-color: purple;
+
+}
