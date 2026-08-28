@@ -16,7 +16,8 @@ p{
 
 ul{
     list-style: none;
-    text-align: right;
+    /* text-align: right; */
+    text-align: center;
     background-color: black;
     padding: 30px;
 }
