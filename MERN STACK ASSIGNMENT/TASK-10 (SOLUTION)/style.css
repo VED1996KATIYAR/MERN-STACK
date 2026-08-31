@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.one{
+    height: 200px;
+    width: 100vw;
+   
+    display: flex;
+}
+.one1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 60px;
+    padding-top: 60px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-top: 50px;
+    margin-left: 30vw;
+    gap: 25px; 
+    font-size: 25px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.two{
+    margin-left: 5vw;
+    height: 1000px;
+    width: 90vw;
+    margin-right: 5vw;
+    
+    gap: 10px;
+    display: flex;
+
+}
+.two1{
+    flex-basis: 50%;
+    background-color: wheat;
+}
+.two1 p{
+    margin: 0;
+    padding: 0;
+}
+.two2 {
+    flex-basis: 50%;
+    
+    height: 100%; 
+    
+    /* FIX: In teen lines se .container bilkul beech mein (center) aa jayega */
+    display: flex;
+    justify-content: center; /* Horizontally center karne ke liye */
+    align-items: center;     /* Vertically center karne ke liye */
+}
+.container{
+    width: 800px;
+    height: 600px;
+   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0%;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    animation: shiftbox;
+    transition: 1s ease;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shiftbox {
+    0%{
+        transform: translate(0,0);
+    }25%{
+        transform: translate(-20px,0);
+    }50%{
+        transform: translate(-20px,-20px);
+    }75%{
+        transform: translate(0,-20px);
+    }100%{
+        transform: translate(0,0);
+    }
+    
+}

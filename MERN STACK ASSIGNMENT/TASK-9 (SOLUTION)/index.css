@@ -71,3 +71,9 @@ button:hover{
     margin-top: 400px;
     height: 700px;
 }
+.container{
+    justify-content: center;
+    align-items:center;
+    height: 700px;
+    width: 700px;
+}
