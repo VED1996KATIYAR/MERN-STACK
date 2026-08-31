@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 45px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    background-color: var(--back)
+}
+.box{
+    padding: 20px;
+    background-color: aqua;
+    background-color: var(--back,pink);
+}
