@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 'Arial',sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-left: 10px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: black;
+}
+
+.header{
+    background-color: whitesmoke;
+    color: white;
+    padding: 1rem 0;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 1000; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileimage img{
+    border-radius: 20px;
+}
+.search{
+    height: 50px;
+}
+article{
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.left{
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+    
+}
+.left img{
+    width: 800px;
+    height: 800px;
+}
+.right p{
+    margin: 0;
+}
+.right1{
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+}
+.right2{
+    font-size: 50px;
+}
+.right3{
+    display: flex;
+    gap: 40px;
+}
+.right31{
+    margin: 70px;
+    width: 180px;
+    height: 80px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    border-radius:10px;
+    background-color:darkseagreen;
+}
+.right31 span{
+    color: blue;
+    font-size: 40px;
+}
+.right32{
+    margin: 70px;
+    flex-direction: column;
+    font-size: 30px;
+}
+.right32 span{
+    color: greenyellow;
+    font-size: 40px;
+}
+.right4{
+    display: flex;
+   
+}
+.right41 select{
+    margin: 50px;
+    width: 100px;
+    height: 60px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+}
+.right42 button{
+    margin: 50px;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    gap: 16px;
+    
+}
+.footer img{
+    margin: 100px;
+    margin-left: 400px;
+    height: 200px;
+    width: 260px;
+    border-radius: 10px;
+}
+.footer img:focus{
+    border: 2px solid orange;
+}
