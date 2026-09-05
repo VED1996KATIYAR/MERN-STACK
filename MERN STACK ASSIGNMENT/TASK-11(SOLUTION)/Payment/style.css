@@ -1,39 +1,154 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: 100vh;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
 }
-.container1{
+
+
+/* Main Container */
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* Left and Right Sections */
+
+.container1 {
+    width: 50%;
     padding: 60px;
     background-color: aliceblue;
-    flex-direction: column;
 }
-.container2{
-    background-color: aliceblue;
+
+
+/* Payment Box */
+
+.hell {
+    width: 700px;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
 }
+
+
+/* Payment Methods */
+
+.hell1 {
+    display: flex;
+    gap: 50px;
+    padding: 15px 0;
+    border-radius: 20px;
+}
+
+.hell11,
+.hell12,
+.hell13 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hell14 {
+    width: 60px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Input Fields */
+
+input {
+    width: 800px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+}
+
+.input1 {
+    width: 600px;
+}
+
+.expiry,
+.cvc,
+.country,
+.zip {
+    width: 300px;
+}
+
+
+/* Input Rows */
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Heading */
+
+h4 {
+    margin-top: 60px;
+}
+
+
+/* Order Summary */
+
+.order-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+/* Right Section */
+
 .right1 {
     width: 620px;
     margin-top: 200px;
     margin-left: 200px;
 }
+
 .right11 {
     border: 1px solid #e5e5e5;
     border-radius: 12px;
     padding: 15px;
 }
+
 .right11 label {
     display: block;
     font-size: 11px;
     margin-bottom: 6px;
 }
+
+
+/* Coupon */
+
 .coupon {
     display: flex;
     gap: 8px;
@@ -46,19 +161,20 @@
     border-radius: 8px;
     padding-left: 10px;
 }
-.coupon button {
-    width: 90px;
-    height: 40px;
 
+.coupon button {
+    width: 120px;
+    height: 40px;
     border: none;
     border-radius: 8px;
-
     background-color: #287cff;
     color: white;
-
     font-size: 11px;
     font-weight: bold;
 }
+
+
+/* Price Details */
 
 .price-details {
     margin-top: 20px;
@@ -67,9 +183,7 @@
 .row {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 12px;
-
     font-size: 13px;
     color: #999;
 }
@@ -81,148 +195,57 @@
 }
 
 
-
+/* Pay Button */
 
 .pay-btn {
     width: 100%;
     height: 50px;
-
     margin-top: 22px;
-
     border: none;
     border-radius: 12px;
-
     background-color: #ffa638;
-
     color: white;
     font-size: 15px;
     font-weight: bold;
-
     cursor: pointer;
 }
 
 
+/* Razorpay Section */
 
 .payment {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 20px;
-
     margin-top: 15px;
-
     font-size: 10px;
 }
 
-.payment b {
+
+/* Razorpay Logo */
+
+.razorpay-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: #1264b0;
     font-size: 14px;
-}
-input{
-    width: 800px;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: whitesmoke;
-}
-h4{
-    margin-top: 60px;
-}
-.hell {
-    width: 700px;
-    min-height: 200px;
-
-    border: 1px solid #ddd;
-    border-radius: 10px;
-
-    padding: 20px;
-    margin-top: 10px;
-
-    background-color: white;
-    border-radius: 20px;
-}
-.hell1{
-    gap: 50px;
-    display: flex;
-    
-    padding: 15px 0;
-    
-    border-radius: 20px;
-    
-}
-.hell11{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 30px;
-}
-.hell12{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-     padding-top: 30px;
-}
-.hell13{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-     padding-top: 30px;
-}
-.hell14{
-    width: 60px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-     padding-top: 30px;
-}
-.input1{
-    width: 600px;
-}
-.expiry{
-    width: 300px;
-}
-.cvc{
-    width: 300px;
-}
-.country{
-    width: 300px;
-}
-
-.zip{
-    width: 300px;
-}
-.container21{
-    margin-top: 100px;
-    margin-left: 40px;
-    flex-direction: column;
-}
-.container211{
-    text-align: center;
-    align-items: center;
     font-weight: bold;
-    font-size: 60px;
 }
 
-.hell11:focus,
-.hell12:focus,
-.hell13:focus,
-.hell14:focus {
-  border: 1px solid orange;
-  color: orange;
+.razorpay-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #1264b0;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    font-weight: bold;
 }
+
