@@ -1,0 +1,815 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="w-full p-5 md:p-8 flex items-center justify-between sticky top-0 z-10 bg-white">
+
+    <div class="flex items-center gap-3">
+        <h1 class="text-lg font-semibold">Greenwood</h1>
+
+        <span class="text-sm md:text-lg h-6 px-2 text-green-700 bg-green-100">
+            Open Sat
+        </span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="hidden md:flex items-center gap-8 text-sm text-gray-500">
+        <a href="#" class="hover:text-black transition hover:underline">
+            Sections
+        </a>
+
+        <a href="#" class="hover:text-black transition hover:underline">
+            Gallery
+        </a>
+
+        <a href="#" class="hover:text-black transition hover:underline">
+            Membership
+        </a>
+
+        <a href="#" class="hover:text-black transition hover:underline">
+            Events
+        </a>
+    </div>
+
+    <!-- Button -->
+    <div>
+        <button class="w-24 h-8 bg-white border rounded-xl hover:bg-black hover:text-white transition">
+            Visit Us
+        </button>
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<article class="w-full container mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <!-- Left -->
+    <div class="p-5 md:p-10 flex flex-col justify-center gap-10 md:gap-20 text-black">
+
+        <div class="text-5xl md:text-7xl font-thin">
+            Your Neighbourhood Library
+        </div>
+
+        <div class="text-xl md:text-2xl font-light">
+            Thousands of books, quiet reading rooms, community events
+            and free WiFi serving Greenwood since 1983
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+
+            <button class="w-full sm:w-50 h-15 border rounded-3xl text-black bg-white hover:bg-black hover:text-white transition">
+                Explore Collection
+            </button>
+
+            <button class="w-full sm:w-50 h-15 border rounded-3xl text-black bg-white hover:bg-black hover:text-white transition">
+                Join Free
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center justify-center p-5 md:p-10">
+
+        <img
+            src="library.webp"
+            class="rounded-2xl w-full h-[400px] md:h-[600px] object-cover"
+            alt="Library"
+        >
+
+    </div>
+
+</article>
+
+
+<!-- ================= STATS ================= -->
+
+<article class="container mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+
+    <div class="w-full h-60 bg-gray-100 rounded-2xl p-8 flex flex-col gap-3">
+        <div class="text-4xl">12000+</div>
+        <div class="text-2xl text-gray-300">
+            Books & journals
+        </div>
+    </div>
+
+    <div class="w-full h-60 bg-gray-100 rounded-2xl p-8 flex flex-col gap-3">
+        <div class="text-4xl">40+</div>
+        <div class="text-2xl text-gray-300">
+            Years of service
+        </div>
+    </div>
+
+    <div class="w-full h-60 bg-gray-100 rounded-2xl p-8 flex flex-col gap-3">
+        <div class="text-4xl text-green-700">
+            Free
+        </div>
+        <div class="text-2xl text-gray-300">
+            Wi-Fi & basic access
+        </div>
+    </div>
+
+    <div class="w-full h-60 bg-gray-100 rounded-2xl p-8 flex flex-col gap-3">
+        <div class="text-4xl">6</div>
+        <div class="text-2xl text-gray-300">
+            Dedicated Sections
+        </div>
+    </div>
+
+</article>
+
+
+<!-- ================= SECTIONS ================= -->
+
+<div class="container mx-auto text-gray-300 p-5 md:p-10 mt-10">
+    OUR SECTIONS
+</div>
+
+<article class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            Fiction & Literature
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Novels, short stories and poetry - from timeless classics
+            to new voices
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse Fiction
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            Children's Corner
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Picture Books, early readers, and a cozy space for young learners.
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse Children's
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            Science & Technology
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Research journals, textbooks and STEM reference materials.
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse Science
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            History & Culture
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Local archives, world civilisations, art history and cultural studies.
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse History
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            Periodicals & Newspapers
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Daily papers, weekly magazines and curated journal subscriptions.
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse Periodicals
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="group hover:bg-green-100 flex flex-col gap-8 p-8 w-full min-h-[240px] bg-slate-300 rounded-xl transition">
+
+        <div class="text-3xl">
+            Digital Media Lab
+        </div>
+
+        <div class="group-hover:text-blue-500 text-sm text-slate-100">
+            Public computers, e-books access and digital literacy resources.
+        </div>
+
+        <div class="text-blue-100">
+            <a href="#" class="group-hover:text-green-500 underline">
+                Browse Digital
+            </a>
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- ================= SPACES ================= -->
+
+<div class="container mx-auto p-5 md:p-10 text-gray-400">
+    OUR SPACES
+</div>
+
+<div class="container mx-auto px-5 flex justify-between items-center">
+
+    <div class="text-xl">
+        OUR SPACES
+    </div>
+
+    <button class="border rounded-2xl px-4 py-2">
+        View All
+    </button>
+
+</div>
+
+
+<div class="container mx-auto p-5 md:p-10 text-4xl">
+    Inside the Library
+</div>
+
+
+<div class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+
+    <div class="overflow-hidden rounded-3xl">
+        <img
+            src="one.jpg"
+            class="w-full h-[250px] md:h-[350px] object-cover rounded-3xl hover:scale-105 transition-transform duration-500"
+            alt=""
+        >
+    </div>
+
+    <div class="overflow-hidden rounded-3xl">
+        <img
+            src="two.jpg"
+            class="w-full h-[250px] md:h-[350px] object-cover rounded-3xl hover:scale-105 transition-transform duration-500"
+            alt=""
+        >
+    </div>
+
+</div>
+
+
+<!-- ================= WHY GREENWOOD ================= -->
+
+<div class="container mx-auto p-5 md:p-20 text-3xl">
+    WHY GREENWOOD
+</div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto p-5">
+
+    <div class="w-full h-75 p-8 bg-sky-100 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">ABOUT</div>
+
+        <div class="text-2xl">
+            <div>A PLACE FOR</div>
+            <div>EVERYONE</div>
+        </div>
+    </div>
+
+
+    <div class="w-full h-75 p-8 bg-green-100 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">COMMUNITY</div>
+
+        <div class="text-2xl">
+            <div>OPEN DOORS,</div>
+            <div>OPEN MINDS.</div>
+        </div>
+    </div>
+
+
+    <div class="w-full h-75 p-8 bg-yellow-200 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">COMMUNITY</div>
+
+        <div class="text-2xl">
+            <div>OPEN DOORS,</div>
+            <div>OPEN MINDS.</div>
+        </div>
+    </div>
+
+
+    <div class="w-full h-75 p-8 bg-pink-300 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">EVENTS</div>
+
+        <div class="text-2xl">
+            <div>LEARN BEYOND</div>
+            <div>BOOKS.</div>
+        </div>
+    </div>
+
+
+    <div class="w-full h-75 p-8 bg-purple-300 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">DIGITAL</div>
+
+        <div class="text-2xl">
+            <div>E-BOOKS, WI-FI</div>
+            <div>& COMPUTERS.</div>
+        </div>
+    </div>
+
+
+    <div class="w-full h-75 p-8 bg-slate-300 rounded-3xl flex flex-col justify-between">
+        <div class="text-xl">ACCESS</div>
+
+        <div class="text-2xl">
+            <div>NO BARRIERS</div>
+            <div>TO KNOWLEDGE</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ================= ABOUT ================= -->
+
+<div class="px-5 md:px-20 lg:px-32 pt-20 pb-10 text-4xl md:text-5xl">
+    MORE THAN A BUILDING FULL OF BOOKS -
+    A HOME OF CURIOUS MINDS
+</div>
+
+
+<div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-5 text-xl md:text-3xl">
+
+    <div class="p-5 md:p-10">
+        Greenwood Public Library has been at the heart of this community
+        since 1983. We believe everyone deserves free access to knowledge,
+        regardless of age, income, or background. Our six sections cover
+        everything from fiction to digital media.
+    </div>
+
+    <div class="p-5 md:p-10">
+        Beyond books, we host weekly events - reading challenges for children,
+        book clubs, digital literacy workshops, and author meets. Our study
+        rooms, free Wi-Fi and welcoming staff make Greenwood a place to come
+        back to year after year.
+    </div>
+
+</div>
+
+
+<!-- ================= MEMBERSHIP ================= -->
+
+<div class="container mx-auto p-5 md:p-10 text-4xl">
+    MEMBERSHIP
+</div>
+
+<div class="container mx-auto p-5 text-5xl md:text-7xl">
+    JOIN THE LIBRARY
+</div>
+
+
+<div class="container mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+    <!-- Intro Card -->
+
+    <div class="flex flex-col justify-between bg-green-100 border rounded-2xl h-[520px]">
+
+        <div class="p-8 flex flex-col gap-8">
+
+            <div class="text-xs text-gray-400">
+                CHOOSE A PLAN
+            </div>
+
+            <div class="text-3xl">
+                <div>Everyone is</div>
+                <div>welcome here.</div>
+            </div>
+
+            <div class="text-sm text-gray-500">
+                <div>Membership unlocks borrowing,</div>
+                <div>study rooms and priority events.</div>
+            </div>
+
+        </div>
+
+        <button class="m-8 bg-black text-white rounded-full py-3 hover:bg-gray-800">
+            Learn More
+        </button>
+
+    </div>
+
+
+    <!-- Basic Card -->
+
+    <div class="border rounded-2xl h-[520px] flex flex-col overflow-hidden">
+
+        <img
+            src="library.webp"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+
+            <div>
+
+                <div class="font-bold">
+                    Basic
+                </div>
+
+                <div class="text-xl">
+                    Free
+                </div>
+
+                <div class="text-xs text-gray-400 mt-2">
+                    3 books · Reading rooms · Wi-Fi
+                </div>
+
+            </div>
+
+            <button class="bg-black text-white rounded-full py-2">
+                Join Free
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Student Card -->
+
+    <div class="border rounded-2xl h-[520px] flex flex-col overflow-hidden">
+
+        <img
+            src="one.jpg"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+
+            <div>
+
+                <div class="font-bold">
+                    Student
+                </div>
+
+                <div class="text-xl">
+                    ₹200<span class="text-sm">/yr</span>
+                </div>
+
+                <div class="text-xs text-gray-400 mt-2">
+                    8 books · Digital catalogue · Study rooms
+                </div>
+
+            </div>
+
+            <button class="bg-black text-white rounded-full py-2">
+                Join Now
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Family Card -->
+
+    <div class="border rounded-2xl h-[520px] flex flex-col overflow-hidden">
+
+        <img
+            src="two.jpg"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-6 flex flex-col justify-between flex-1">
+
+            <div>
+
+                <div class="font-bold">
+                    Family
+                </div>
+
+                <div class="text-xl">
+                    ₹500<span class="text-sm">/yr</span>
+                </div>
+
+                <div class="text-xs text-gray-400 mt-2">
+                    15 books · All benefits · Priority events
+                </div>
+
+            </div>
+
+            <button class="border rounded-full py-2">
+                Join Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<div class="container mx-auto px-5 pt-10 md:pt-20 pb-10 flex flex-col md:flex-row gap-8">
+
+    <div class="shrink-0">
+
+        <img
+            src="cstomer.jpg"
+            class="w-20 h-20 rounded-full object-cover"
+            alt=""
+        >
+
+    </div>
+
+
+    <div class="flex flex-col gap-8">
+
+        <div class="text-3xl md:text-5xl">
+
+            "Greenwood has been my second home for fifteen years -
+            it's where I learned to love reading."
+
+        </div>
+
+        <div class="text-xl md:text-3xl">
+            -Meera Desai, volunteer at children's section.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CONTACT ================= -->
+
+<div class="container mx-auto flex flex-col gap-8 w-full min-h-[440px] bg-green-100 p-5 md:p-10">
+
+    <div class="text-3xl md:text-4xl text-gray-400">
+        CONTACT
+    </div>
+
+    <div class="text-3xl md:text-5xl">
+        VISIT US AT 42 ELM STREET, GREENWOOD
+    </div>
+
+    <div class="text-xl md:text-2xl flex flex-col sm:flex-row gap-3 sm:gap-10">
+
+        <div>Mon-Fri: 8am-7pm</div>
+        <div>Sat: 9am-5pm</div>
+        <div>Sun: Closed</div>
+
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+
+        <button class="w-full sm:w-50 h-15 rounded-3xl text-white bg-black border">
+            Get Directions
+        </button>
+
+        <div>(555) 012-3456</div>
+
+        <div class="break-all">
+            hello@greenwoodlibrary.org
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= EVENTS ================= -->
+
+<div class="container mx-auto text-3xl p-5 md:p-10">
+    EVENTS
+</div>
+
+<hr>
+
+<div class="container mx-auto text-4xl md:text-5xl p-5 md:p-10">
+    What's Coming Up
+</div>
+
+
+<div class="container mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+    <div class="border rounded-2xl h-[300px] flex flex-col overflow-hidden">
+
+        <img
+            src="two.jpg"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-2 text-sm">
+            Summer Reading Challenge - open to children aged 6-14
+        </div>
+
+        <div class="p-2 text-sm">
+            5 Aug 2026
+        </div>
+
+    </div>
+
+
+    <div class="border rounded-2xl h-[300px] flex flex-col overflow-hidden">
+
+        <img
+            src="library.webp"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-2 text-sm">
+            Book Club: Discussing The God of Small Things
+        </div>
+
+        <div class="p-2 text-sm">
+            5 Aug 2026
+        </div>
+
+    </div>
+
+
+    <div class="border rounded-2xl h-[300px] flex flex-col overflow-hidden">
+
+        <img
+            src="one.jpg"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-2 text-sm">
+            Summer Reading Challenge - open to children aged 6-14
+        </div>
+
+        <div class="p-2 text-sm">
+            5 Aug 2026
+        </div>
+
+    </div>
+
+
+    <div class="border rounded-2xl h-[300px] flex flex-col overflow-hidden">
+
+        <img
+            src="one.jpg"
+            class="w-full h-[220px] object-cover"
+            alt=""
+        >
+
+        <div class="p-2 text-sm">
+            Summer Reading Challenge - open to children aged 6-14
+        </div>
+
+        <div class="p-2 text-sm">
+            5 Aug 2026
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<div class="container pt-20 md:pt-60 mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+    <!-- Logo -->
+
+    <div class="text-5xl">
+        Greenwood
+    </div>
+
+
+    <!-- Pages -->
+
+    <div>
+
+        <div class="text-3xl">
+            Pages
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col pt-5 gap-2 text-lg">
+
+            <div>Home</div>
+            <div>Sections</div>
+            <div>Membership</div>
+            <div>Events</div>
+            <div>Contact</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sections -->
+
+    <div>
+
+        <div class="text-3xl">
+            Sections
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col pt-5 gap-2 text-lg">
+
+            <div>Fiction</div>
+            <div>Children's</div>
+            <div>Science</div>
+            <div>History</div>
+            <div>Periodicals</div>
+            <div>Digital Lab</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Details -->
+
+    <div>
+
+        <div class="text-3xl">
+            Details
+        </div>
+
+        <hr>
+
+        <div class="flex flex-col pt-5 gap-2 text-lg">
+
+            <div>42 Elm Street</div>
+            <div>(555) 012-3456</div>
+            <div class="break-all">
+                hello@greenwoodlibrary.org
+            </div>
+            <div>MON-FRI 8am-7pm</div>
+            <div>Sat 9am-5pm</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
