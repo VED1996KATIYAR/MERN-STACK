@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Booking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">Logo</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#about">About Us</a>
+    </nav>
+    <div class="user-area">
+      <span class="username" id="username">Username</span>
+      <button class="logout-btn" id="logoutBtn" type="button" aria-label="Log out">↪</button>
+    </div>
+  </header>
+
+  <main class="page" id="home">
+    <section class="cart-column" aria-label="Cart and booking form">
+      <div class="panel cart-panel">
+        <h2 class="panel-title">Added Items</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>S.No.</th><th>Service Name</th><th>Price</th><th></th></tr>
+            </thead>
+            <tbody id="cartItems">
+              <tr class="empty-row"><td colspan="4">No items added yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="total-row">
+          <strong>Total Amount</strong>
+          <strong id="totalAmount">₹0.00</strong>
+        </div>
+        <p class="cart-note" id="cartNote">Add services from the right to get started.</p>
+      </div>
+
+      <form class="panel booking-panel" id="bookingForm">
+        <h2>Book Now</h2>
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="John Doe" required minlength="2">
+
+        <div class="form-grid">
+          <div>
+            <label for="email">Email ID</label>
+            <input id="email" name="email" type="email" placeholder="mail@gmail.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="9876543210" pattern="[0-9+\-\s()]{7,18}" required>
+          </div>
+        </div>
+        <button class="primary-btn full-btn" type="submit">Book Now</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="panel services-panel" id="services">
+      <div class="services-heading">
+        <h1>Browse Our Services</h1>
+        <p>Click on Add Item to select a service, or press Skip Item to view the next service.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-image-wrap">
+          <img id="serviceImage" src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=900&q=85" alt="Laundry and stain removal service">
+        </div>
+        <div class="service-info">
+          <div>
+            <h2 id="serviceName">Stain Removal</h2>
+            <p class="service-description" id="serviceDescription">Careful treatment for tough stains.</p>
+          </div>
+          <p class="service-price" id="servicePrice">₹500.00</p>
+        </div>
+        <div class="service-actions">
+          <button class="skip-btn" id="skipBtn" type="button">Skip Item <span>⊖</span></button>
+          <button class="add-btn" id="addBtn" type="button">Add Item <span>⊕</span></button>
+        </div>
+        <p class="service-counter" id="serviceCounter">Service 1 of 5</p>
+      </div>
+
+      <div class="bottom-actions">
+        <p>ⓘ Add the items to the cart and book now.</p>
+        <div class="bottom-buttons">
+          <button class="secondary-btn" id="addToCartBtn" type="button">Add to Cart</button>
+          <button class="primary-btn" id="bookNowBtn" type="button">Book Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <span id="about">© 2026 ServiceBook. Quality services, made simple.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
